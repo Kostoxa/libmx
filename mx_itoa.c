@@ -1,6 +1,6 @@
-#include <stdlib.h>
+#include "../inc/libmx.h"
 
-int mx_nbrlenth(int nbr);
+int mx_nbrlen(int nbr);
 char *mx_strnew(const int size);
 
 char *mx_itoa(int number) {
@@ -11,7 +11,7 @@ char *mx_itoa(int number) {
 
     if (number == -2147483648)
         return "-2147483648";
-	size = mx_nbrlenth(number);
+	size = mx_nbrlen(number);
 	toa = mx_strnew(size);
     if (number < 0) {
         temp *= -1;

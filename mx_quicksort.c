@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int mx_strlen(const char *s);
 void mx_swap_str(char **s1, char **s2);
 
@@ -46,16 +44,4 @@ int mx_quicksort(char **arr, int left, int right) {
     if (newL < right)
         count = count + mx_quicksort(arr, newL, right);
     return count;
-}
-
-
-
-int main() {
-    char *arr[] =  {"666666", "333", "999999999", "1", "88888888", "4444", "55555", "7777777", "22"};
-
-    printf("%i\n",mx_quicksort(arr, 0, 8));
-    for (int k = 0; k < 9; k++) {
-        printf("%s ", arr[k]);
-    }
-return 0;
 }
