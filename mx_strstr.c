@@ -18,10 +18,3 @@ char *mx_strstr(const char *haystack, const char *needle) {
 	}
 	return 0;
 }
-
-#include <stdio.h>
-
-int main() {
-	printf("%s", mx_strstr("AAAAAAAACCCAAAABCD", "ABCD"));
-return 0;
-}
