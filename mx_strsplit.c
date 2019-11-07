@@ -1,25 +1,26 @@
 #include "../inc/libmx.h"
 
 char **mx_strsplit(const char *s, char c) {
-	char **news = NULL;
+	char **news = (char **)malloc(sizeof(char *) * mx_count_words(s, c) + 1);
 	int i = 0;
-	int start = 0;
-	int end = 0;
-	int k = 0;
-	int j;
-	//int size = mx_strlen(s);
+    int k = 0;
+	int start;
+	int end;
 
+	if (s == NULL)
+		return NULL;
+	news[mx_count_words(s, c)] = NULL;
 	while (s[i]) {
-		while (s[i] == c)
+		while (s[i] == c && s[i] != '\0')
 			i++;
-		j = i;
-		while (s[i] != c)
+		start = i;
+		while (s[i] != c && s[i] != '\0')
 			i++;
 		end = i;
-		news[k] = mx_str_size_dup(s, start, end);
-		i++;
-		k++;
-		
+		if (start != end) {
+			news[k] = mx_str_size_dup(s, start, end);
+			k++;
+		}
 	}
 	return news;
 }
@@ -27,9 +28,9 @@ char **mx_strsplit(const char *s, char c) {
 #include <stdio.h>
 
 int main() {
-	char s[] = "**Good bye,**Mr.*Anderson.****";
-	char **arr = mx_strsplit(s, '*');
-	for (int i = 0; i < 3; i++) {
+	char *s ="      Knock, knock,    Neo.   ";
+	char **arr =  mx_strsplit(s, ' ');
+	for (int i = 0; arr[i]; i++) {
 		printf("%s\n", arr[i]);
 	}
 return 0;
