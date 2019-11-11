@@ -13,15 +13,12 @@ void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
 #include <string.h>
 
 int main() {
-    int b[] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59};//char b[] = "AkjdghkhghhdhBCDEFGH";
-	int c[20];
-    int k[20];
-    mx_memcpy(c, b, 20);
-    for (int i=0; i<20; i++)
-        printf("%c ", c[i]);
+    char b[] = "AkjdghBCDEFGH";
+	char c[] = "AkjdghBCDEFGH";
+    mx_memcpy(&b[2], &b[5], 10);
+    printf("%s ", b);
     printf("\n");
-    memcpy(k, b, 20);
-    for (int i=0; i<12; i++)
-        printf("%c ", k[i]);
+    memcpy(&c[2], &c[5], 10);
+	printf("%s ", b);
 return 0;
 }*/
