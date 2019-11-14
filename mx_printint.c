@@ -1,6 +1,4 @@
-#include <unistd.h>
-
-void mx_printchar(char c);
+#include "../inc/libmx.h"
 
 void mx_printint(int n) {
 	if (n == -2147483648) {

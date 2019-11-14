@@ -1,6 +1,4 @@
-#include <stdlib.h>
-
-void mx_printstr(const char *s);
+#include "../inc/libmx.h"
 
 void mx_print_strarr(char **arr, const char *delim) {
 	int i = 0;

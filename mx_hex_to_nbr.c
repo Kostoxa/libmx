@@ -1,3 +1,5 @@
+#include "../inc/libmx.h"
+
 unsigned long mx_hex_to_nbr(const char *hex) {
 	int arsize = 0;
 	unsigned long dec = 0;

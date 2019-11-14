@@ -1,6 +1,4 @@
-#include <stdlib.h>
-
-char *mx_strnew(const int size);
+#include "../inc/libmx.h"
 
 char *mx_nbr_to_hex(unsigned long nbr) {
 	unsigned long store = nbr;

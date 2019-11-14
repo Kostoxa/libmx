@@ -1,3 +1,5 @@
+#include "../inc/libmx.h"
+
 int mx_strlen(const char *s);
 void mx_swap_str(char **s1, char **s2);
 

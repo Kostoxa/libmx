@@ -1,8 +1,5 @@
 #include "../inc/libmx.h"
 
-int mx_nbrlen(int nbr);
-char *mx_strnew(const int size);
-
 char *mx_itoa(int number) {
     char *toa = NULL;
     int size = 0;
