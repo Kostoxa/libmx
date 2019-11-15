@@ -7,9 +7,9 @@ char *mx_file_to_str(const char *file) {
 	char *str = NULL;
 
 	if (read(fop, NULL, 0) < 0)
-        return 0;
+        return NULL;
     else if (fop == -1) 
-        return 0;
+        return NULL;
 
 	while (read(fop, &buf, 1))
 		size++;

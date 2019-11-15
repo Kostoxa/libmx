@@ -11,4 +11,4 @@ char *mx_strcat(char *s1, const char *s2) {
 	} 
 	*p_s1 = '\0';
 	return s1;
-}
+} 

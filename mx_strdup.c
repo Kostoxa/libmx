@@ -2,11 +2,11 @@
 
 char *mx_strdup(const char *str) {
 	char *copy = NULL;
-	
+
 	copy = mx_strnew(mx_strlen(str));
-	if (copy  == NULL)
+	if (copy == NULL)
 		return NULL;
 	else
-		mx_strcpy(copy, str);
+		copy = mx_strcpy(copy, str);
 	return copy;
 }
