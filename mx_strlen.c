@@ -1,5 +1,6 @@
 #include "../inc/libmx.h"
 
+//khgsfsg
 int mx_strlen(const char *s) {
 	int i = 0;
 
