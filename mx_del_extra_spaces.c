@@ -1,5 +1,6 @@
 #include "../inc/libmx.h"
 
+//sdgfdsgfshsg
 char *mx_del_extra_spaces(const char *str) {
 	char *trims = NULL;
     char *news = NULL;
