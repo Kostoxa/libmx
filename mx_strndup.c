@@ -1,5 +1,6 @@
 #include "../inc/libmx.h"
 
+//ls;dkhfkjsgh
 char *mx_strndup(const char *s1, size_t n) {
 	char *copy = NULL;
 	
