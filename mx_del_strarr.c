@@ -1,6 +1,5 @@
 #include "../inc/libmx.h" 
 
-//kjgsgf
 void mx_del_strarr(char ***arr) {
 	char **parr = *arr;
 

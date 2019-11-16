@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//kjgsfdgsgfgs
 int mx_get_substr_allindex(const char *str, const char *subi, int count) {
     int j = 0;
     int k;

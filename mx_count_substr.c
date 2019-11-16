@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//khsdgfjgds
 int mx_count_substr(const char *str, const char *sub) {
     int j = 0;
     int k;

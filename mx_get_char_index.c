@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//ljshdkjsklhn
 int mx_get_char_index(const char *str, char c) {
 	int i = 0;
 

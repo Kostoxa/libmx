@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//ljsdhfkdsgjgkf
 char *mx_strstr(const char *haystack, const char *needle) {
 	int j = 0;
 	int k;

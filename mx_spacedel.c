@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//l;khhfdhhfh
 char *mx_spacedel(char *newstr, const char *str) {
 	int j = 0;
 	int size = mx_strlen(str);

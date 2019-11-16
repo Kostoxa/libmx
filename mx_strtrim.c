@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//hosdhfh
 char *mx_strtrim(const char *str) {
 	int beg = 0;
 	int end;

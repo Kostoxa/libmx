@@ -1,6 +1,5 @@
 #include "../inc/libmx.h"
 
-//kjlhghkfhadh
 int mx_get_substr_index(const char *str, const char *subi) {
     int j = 0;
     int k;
