@@ -11,13 +11,3 @@ void *mx_memrchr(const void *s, int c, size_t n) {
     }
     return NULL;
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char s1[] = "Trinity";
-    printf("%s\n", mx_memrchr(s1, 'i', 7));
-return 0;
-}*/

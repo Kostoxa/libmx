@@ -15,15 +15,3 @@ void *mx_memmem(const void *big, size_t big_len, const void *little, size_t litt
     }
     return NULL;
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char s1[] = "Trinity";
-	char s2[] = "iniiiiiiii";
-    printf("%s\n", mx_memmem(s1, 7, s2, 3));
-	printf("%s\n", memmem(s1, 7, s2, 3));
-return 0;
-}*/

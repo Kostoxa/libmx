@@ -10,14 +10,3 @@ void *mx_memchr(const void *s, int c, size_t n) {
 	}
 	return NULL;
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char *s1 = NULL;
-    printf("%s\n", mx_memchr(s1, 65, 8));
-    printf("%s\n", memchr(s1, 65, 8));
-return 0;
-}*/

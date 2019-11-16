@@ -10,15 +10,3 @@ t_list  *mx_create_node(void *data) {
 
 	return node;	
 }
-/*
-#include <stdio.h>
-
-int main() {
-	t_list *list = NULL;
-	char c[] = "HELLOW";
-
-	list = mx_create_node(c);
-	printf("%ss", list->data);	
-
-return 0;
-}*/

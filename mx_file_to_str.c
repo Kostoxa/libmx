@@ -21,11 +21,3 @@ char *mx_file_to_str(const char *file) {
 	close(fop);
 	return str;
 }
-/*
-#include <stdio.h>
-
-int main() {
-	printf("%s", mx_file_to_str("re."));
-	return 0;
-}
-*/

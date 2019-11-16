@@ -8,17 +8,3 @@ void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
         p_dst[i] = p_src[i];
     return dst;
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char b[] = "AkjdghBCDEFGH";
-	char c[] = "AkjdghBCDEFGH";
-    mx_memcpy(&b[2], &b[5], 10);
-    printf("%s ", b);
-    printf("\n");
-    memcpy(&c[2], &c[5], 10);
-	printf("%s ", b);
-return 0;
-}*/

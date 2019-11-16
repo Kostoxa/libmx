@@ -11,20 +11,3 @@ void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) 
 	}
     return dst;
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char b[] = "AkjdghkhghhdhBCDEFGH";
-    char c[20];
-    char k[20];
-    mx_memccpy(c, b, 'W', 20);
-    for (int i=0; i<20; i++)
-        printf("%c ", c[i]);
-    printf("\n");
-    memccpy(k, b, 'W', 20);
-    for (int i=0; i<20; i++)
-        printf("%c ", k[i]);
-return 0;
-}*/

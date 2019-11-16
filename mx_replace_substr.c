@@ -21,13 +21,3 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
 	}
 	return news;
 }
-/*
-#include <stdio.h>
-
-int main() {
-char *str1 = "111aldsOOOO 222aldsOOOO 333aldsOOOO 444aldsOOOO 555aldsOOOO";
-char *str2 = "aldsOOOO";
-char *str3 = "HHHGOOOO";
-	printf("%s", mx_replace_substr(str1, str2, str3));
-return 0;
-}*/

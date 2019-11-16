@@ -1,19 +1,14 @@
 #include "../inc/libmx.h"
 
 void *mx_realloc(void *ptr, size_t size) {
-	char *newp = mx_strnew(size);
+	char *newp = (char *)malloc(sizeof(char)*size);
 	char *p_ptr = (char *) ptr;
 
-	mx_memcpy(newp, p_ptr, size);
+	if (ptr == NULL)
+		return NULL;
+
+	for (size_t i = 0; i < size; i++)
+		newp[i] = p_ptr[i];
+	
 	return newp;
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char b[] = "fgdhryteh";
-    mx_realloc(b, 20);
-    printf("%s ", b);
-return 0;
-}*/

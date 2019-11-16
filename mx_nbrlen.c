@@ -1,3 +1,5 @@
+#include "../inc/libmx.h"
+
 int mx_nbrlen(int nbr) {
     int size = 0;
 	int temp = nbr;
