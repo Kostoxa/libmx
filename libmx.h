@@ -12,7 +12,6 @@ typedef struct  s_list {
     struct s_list *next;
 } t_list;
 
-bool cmp(void *a, void *b);
 bool mx_isspace(char c);
 char *mx_del_extra_spaces(const char *str);
 char *mx_file_to_str(const char *file);
