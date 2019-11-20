@@ -3,7 +3,7 @@
 char **mx_strsplit(const char *s, char c) {
 	char **news = NULL;
 	int i = 0;
-    int k = 0;
+	int k = 0;
 	int start;
 	int end;
 

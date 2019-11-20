@@ -12,11 +12,11 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 		hex[0] = 48;
 		return hex;
 	}
-    while (store) {
-        store = store / 16;
-        counter++;
-    }
- 	hex = mx_strnew(counter);
+	while (store) {
+		store = store / 16;
+		counter++;
+	}
+	hex = mx_strnew(counter);
 	store = nbr;
 	i = counter - 1;
 	while (store) {
