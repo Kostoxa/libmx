@@ -3,7 +3,7 @@
 void mx_pop_back(t_list **head)  {
 	t_list *p = NULL;
 
-	if (*head == NULL || head == NULL)
+	if (*head == NULL)
 		return;
 
 	if ((*head)->next == NULL) {

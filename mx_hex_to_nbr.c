@@ -12,8 +12,10 @@ unsigned long mx_hex_to_nbr(const char *hex) {
 			dec += (hex[i] - 55) * pow;
 		else if (hex[i] > 96 && hex[i] < 103)
 			dec += (hex[i] - 87) * pow;
-		else
+		else if (hex[i] > 47 && hex[i] < 58)
 			dec += (hex[i] - 48) * pow;
+		else
+			return 0;
 		pow *= 16;
 	}
 	return dec; 

@@ -37,6 +37,7 @@ SRC = src/mx_binary_search.c \
 		src/mx_push_back.c \
 		src/mx_push_front.c \
 		src/mx_quicksort.c \
+		src/mx_read_line.c \
 		src/mx_realloc.c \
 		src/mx_replace_substr.c \
 		src/mx_sort_list.c \
@@ -45,12 +46,14 @@ SRC = src/mx_binary_search.c \
 		src/mx_str_reverse.c \
 		src/mx_str_size_cpy.c \
 		src/mx_str_size_dup.c \
+		src/mx_str_size_dup_free.c \
 		src/mx_strcat.c \
 		src/mx_strcmp.c \
 		src/mx_strcpy.c \
 		src/mx_strdel.c \
 		src/mx_strdup.c \
 		src/mx_strjoin.c \
+		src/mx_strjoin_free.c \
 		src/mx_strlen.c \
 		src/mx_strncpy.c \
 		src/mx_strndup.c \
@@ -98,6 +101,7 @@ OBJ = mx_binary_search.o \
 		mx_push_back.o \
 		mx_push_front.o \
 		mx_quicksort.o \
+		mx_read_line.o \
 		mx_realloc.o \
 		mx_replace_substr.o \
 		mx_sort_list.o \
@@ -106,12 +110,14 @@ OBJ = mx_binary_search.o \
 		mx_str_reverse.o \
 		mx_str_size_cpy.o \
 		mx_str_size_dup.o \
+		mx_str_size_dup_free.o \
 		mx_strcat.o \
 		mx_strcmp.o \
 		mx_strcpy.o \
 		mx_strdel.o \
 		mx_strdup.o \
 		mx_strjoin.o \
+		mx_strjoin_free.o \
 		mx_strlen.o \
 		mx_strncpy.o \
 		mx_strndup.o \
